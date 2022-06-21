@@ -1,4 +1,7 @@
-import './App.css';
+import "./App.css";
+import BrandLogo from "../Header/BrandLogo/brandLogo";
+import ProfilePicture from "../Header/ProfilePic/profilePic";
+import BurgerMenu from "../Header/Burger Menu/burgerMenu";
 import Quotes from '../LowerSection/Quote/quote';
 import WellBeing from '../LowerSection/WellBeingButton/wellBeingButton';
 import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
@@ -6,12 +9,16 @@ import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+	return (
+		<div className="App" id="outer-container">
+    <BurgerMenu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
+			<header className="App-header">
+      <div id="page-wrap">
+      </div>
+        <BrandLogo logo={BrandLogo}/>
+        <ProfilePicture picture={ProfilePicture}/>
       </header>
-
-      <main>
+<main>
 
         <section className='LowerSection'>
           <SoundOnOff></SoundOnOff>
@@ -20,8 +27,8 @@ function App() {
         </section>
         
       </main>
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
