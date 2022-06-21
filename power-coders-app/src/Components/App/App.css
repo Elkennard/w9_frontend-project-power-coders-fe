@@ -23,14 +23,15 @@
 }
 
 .App-header {
-	background-color: #282c34;
-	min-height: 10vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+  background-color: #282c34;
+  min-height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
@@ -44,4 +45,13 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.LowerSection {
+  background-color: #F2F2F2 ;
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  left: 0px;
+  top: 924px;
 }
