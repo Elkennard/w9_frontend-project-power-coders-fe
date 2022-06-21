@@ -1,6 +1,9 @@
 import './App.css';
 import Quotes from '../LowerSection/Quote/quote';
 import WellBeing from '../LowerSection/WellBeingButton/wellBeingButton';
+import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
+
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <main>
 
         <section className='LowerSection'>
+          <SoundOnOff></SoundOnOff>
           <Quotes  author="Abdullatif" quotes="Growth is internal, changes aren't noticed till too late."></Quotes>
           <WellBeing></WellBeing>
         </section>
