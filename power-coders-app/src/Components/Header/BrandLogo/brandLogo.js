@@ -11,6 +11,7 @@ const imageStyle = {
 function BrandLogo() {
 	return (
 		<div className="Image">
+		<h1>Wellbeing Toolkit</h1>
 			<img
 				src={require("./soc-logo.png")}
 				alt="School of Code logo"
