@@ -1,4 +1,5 @@
 import React from "react";
+import "./profile.css"
 
 const imageStyle = {
 	padding: 0,
@@ -8,10 +9,11 @@ const imageStyle = {
 
 function ProfilePicture() {
 	return (
-		<div className="Image">
+		<div >
 			<img
+				className="Image"
 				src={require("./profile-pic.jpg")}
-				alt="Profile Picture"
+				alt="Profile"
 				style={imageStyle}
 			/>
 		</div>

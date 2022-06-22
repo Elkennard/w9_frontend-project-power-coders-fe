@@ -15,8 +15,11 @@ function App() {
 			<header className="App-header">
       <div id="page-wrap">
       </div>
-        <BrandLogo logo={BrandLogo}/>
-        <ProfilePicture picture={ProfilePicture}/>
+        <BrandLogo class="title" logo={BrandLogo}/>
+        <div className="profile">        
+          <ProfilePicture picture={ProfilePicture}/>
+        </div>
+
       </header>
 <main>
 
