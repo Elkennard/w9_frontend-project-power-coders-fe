@@ -3,8 +3,8 @@ import "./brand.css"
 const imageStyle = {
 	margin: "0 auto",
 	padding: 0,
-	width: "100px",
-	height: "100px",
+	width: "80px",
+	height: "80px",
 	display: "block",
 };
 

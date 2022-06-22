@@ -9,14 +9,12 @@ const imageStyle = {
 
 function ProfilePicture() {
 	return (
-		<div >
 			<img
 				className="Image"
 				src={require("./profile-pic.jpg")}
-				alt="Profile of individual"
-				style={imageStyle}
+				alt="Profile"
+				// style={imageStyle}
 			/>
-		</div>
 	);
 }
 
