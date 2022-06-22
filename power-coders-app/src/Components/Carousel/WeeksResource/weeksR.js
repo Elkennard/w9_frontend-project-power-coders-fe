@@ -1,24 +1,27 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
-import { useState } from "react";
 import "./index.css";
+import { useState, useEffect } from 'react';
 // import "1_hero_journey" from "./WeekImages";
 
 
 export default function ControlledCarousel() {
     const [index, setIndex] = useState(0);
+    const [resource, setResource] = useState([])
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
+useEffect(() => {
   async function fetchResources(id) {
-    const response = await fetch(`http://localhost:3001/resources/week/${id}`);
-    const data = await response.json();
-    console.log(data)
-    return data;
+        const response = await fetch(`http://localhost:3001/resources/week/${id}`);
+        const data = await response.json();
+        console.log(data.payload[0].title)
+        setResource(data.payload[0]);
   };
+  fetchResources(1)
 
+ },[])
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       
@@ -37,8 +40,8 @@ export default function ControlledCarousel() {
         
         
         <Carousel.Caption class="column">
-          <h3>{fetchResources(1)}Week 1</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>{resource.title}</h3>
+          <p>{resource.description}</p>
         </Carousel.Caption>
 
       {/* closes row div */}
