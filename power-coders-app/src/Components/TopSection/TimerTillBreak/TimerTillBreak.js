@@ -26,8 +26,21 @@ function Timer(props) {
 //     endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
 //     updateTimer();
 //   }
+    let seconds = 0
+    // I need this function to run untill 10 minutes have passed
+    // after every 1 sec it increases by 1, and it  shows, that variable on the h3.
+    // I should have to two variables, one for the seconds, each time it reaches 60, it adds one to the minutes variable. 
+//plan 
 
-  return <div id={props.timer}></div>;
+// I first make the 60 second timer with the set interval and it should run till 60, then after hitting 60 the variable is reset to 0. 
+
+
+
+    function countdown(){
+
+    }
+
+  return <h3 id={props.timer}></h3>;
 }
 
 export default Timer;

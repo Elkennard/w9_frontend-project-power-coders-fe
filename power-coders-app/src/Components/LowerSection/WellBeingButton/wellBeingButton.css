@@ -1,0 +1,15 @@
+.wellbeingButton {
+    background-color: #459869;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 1% 2%;
+    font-size: 1.2rem;    
+    border-radius: 50px;
+    font-weight: bolder;
+    
+}
+
+.wellbeingButton:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}

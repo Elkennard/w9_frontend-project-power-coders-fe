@@ -7,31 +7,32 @@ import WellBeing from "../LowerSection/WellBeingButton/wellBeingButton";
 import SoundOnOff from "../LowerSection/SoundOnOff/SoundOnOff";
 import WelcomeUser from "../TopSection/WelcomeUser/welcomeUser";
 import Timer from "../TopSection/TimerTillBreak/TimerTillBreak";
-
+import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App" id="outer-container">
+      <BurgerMenu
+        pageWrapId={"page-wrap"}
+        outerContainerId={"outer-container"}
+      />
       <header className="App-header">
-        {/* <div id="page-wrap"> */}
-        <BurgerMenu
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
-        />
-        {/* </div> */}
+        <div id="page-wrap"></div>
         <BrandLogo class="title" logo={BrandLogo} />
         <div className="profile">
           <ProfilePicture picture={ProfilePicture} />
         </div>
       </header>
+      <main>
+        <div className="column2">
+          <ControlledCarousel />;
+        </div>
 
-      <main className="pageBody">
-
-
-      <section className="TopSection">
-        <WelcomeUser user="Farah"></WelcomeUser>
-        <Timer timer="countdown"></Timer>
-      </section>
+        <section className="TopSection">
+          <WelcomeUser user="Farah"></WelcomeUser>
+          <Timer timer="countdown"></Timer>
+        </section>
         <section className="LowerSection">
           <SoundOnOff></SoundOnOff>
           <Quotes
@@ -41,6 +42,12 @@ function App() {
           <WellBeing></WellBeing>
         </section>
       </main>
+      {/* </div> */}
+      <footer>
+        {/* Links to LinkedIn go in here */}
+        <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
+        <p1>Trademark 2022</p1>
+      </footer>
     </div>
   );
 }
