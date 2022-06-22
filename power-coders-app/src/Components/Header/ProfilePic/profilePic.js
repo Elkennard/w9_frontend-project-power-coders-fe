@@ -13,7 +13,7 @@ function ProfilePicture() {
 			<img
 				className="Image"
 				src={require("./profile-pic.jpg")}
-				alt="Profile"
+				alt="Profile of individual"
 				style={imageStyle}
 			/>
 		</div>

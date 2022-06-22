@@ -5,7 +5,8 @@ import BurgerMenu from "../Header/Burger Menu/burgerMenu";
 import Quotes from '../LowerSection/Quote/quote';
 import WellBeing from '../LowerSection/WellBeingButton/wellBeingButton';
 import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
-
+import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
 
       </header>
 <main>
+      <div className="column2">
+      <ControlledCarousel />;
+      </div>
 
         <section className='LowerSection'>
           <SoundOnOff></SoundOnOff>
@@ -30,7 +34,13 @@ function App() {
         </section>
         
       </main>
-		</div>
+		{/* </div> */}
+    <footer>
+        {/* Links to LinkedIn go in here */}
+        <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
+        <p1>Trademark 2022</p1>
+    </footer>
+    </div>
 	);
 }
 
