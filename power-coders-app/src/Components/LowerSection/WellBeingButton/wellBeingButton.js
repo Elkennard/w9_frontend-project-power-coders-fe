@@ -11,7 +11,7 @@ function WellBeing (){
 
     return (
         <>
-            { !isClicked && <button className="wellbeingButton" onClick={() => handleClick(isClicked)} >Wellbeing <br/>Check-in?</button>}        
+            <button className="wellbeingButton" onClick={() => handleClick(isClicked)} >Wellbeing <br/>Check-in?</button>        
             { isClicked && <WellbeingForm handleclick={handleClick} isclicked={isClicked}/>}
         </>
 

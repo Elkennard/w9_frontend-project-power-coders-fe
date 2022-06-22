@@ -1,12 +1,14 @@
 .wellbeing-form {
     position: absolute;
+    right: 1%;
+    top: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border: 2px solid #849AAF;
     background-color: #F2F2F2;
-    width: 30%;  
+    width: 20%;  
     border-radius: 5%;
     padding: 0 0 1% 0;
     font-size: 1.1rem;
