@@ -5,7 +5,7 @@ import BurgerMenu from "../Header/Burger Menu/burgerMenu";
 import Quotes from '../LowerSection/Quote/quote';
 import WellBeing from '../LowerSection/WellBeingButton/wellBeingButton';
 import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
-import WellbeingForm from "../LowerSection/WellBeingForm/wellBeingForm.js"
+
 
 
 
@@ -27,7 +27,7 @@ function App() {
           <SoundOnOff></SoundOnOff>
           <Quotes  author="Abdullatif" quotes="Growth is internal, changes aren't noticed till too late."></Quotes>
           <WellBeing></WellBeing>
-          <WellbeingForm />          
+                  
         </section>
                 
       </main>
