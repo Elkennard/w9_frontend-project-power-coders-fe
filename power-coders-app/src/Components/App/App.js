@@ -9,8 +9,10 @@ import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function App() {
 	return (
+    
 		<div className="App" id="outer-container">
     <BurgerMenu pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
 			<header className="App-header">
@@ -27,12 +29,14 @@ function App() {
       <ControlledCarousel />;
       </div>
 
+
         <section className='LowerSection'>
           <SoundOnOff></SoundOnOff>
           <Quotes  author="Abdullatif" quotes="Growth is internal, changes aren't noticed till too late."></Quotes>
           <WellBeing></WellBeing>
+                  
         </section>
-        
+                
       </main>
 		{/* </div> */}
     <footer>
