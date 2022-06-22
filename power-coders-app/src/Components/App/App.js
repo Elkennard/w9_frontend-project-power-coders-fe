@@ -5,7 +5,8 @@ import BurgerMenu from "../Header/Burger Menu/burgerMenu";
 import Quotes from '../LowerSection/Quote/quote';
 import WellBeing from '../LowerSection/WellBeingButton/wellBeingButton';
 import SoundOnOff from '../LowerSection/SoundOnOff/SoundOnOff';
-
+import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         <ProfilePicture picture={ProfilePicture}/>
       </header>
 <main>
+      <div>
+      <ControlledCarousel />;
+      </div>
 
         <section className='LowerSection'>
           <SoundOnOff></SoundOnOff>
