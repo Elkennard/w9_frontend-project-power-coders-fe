@@ -3,13 +3,12 @@
   }
   
   #page-wrap {
-	padding-bottom: 10px;
-	padding-top: 10px;
+	/* padding-bottom: 10px;
+	padding-top: 10px; */
   }
 
 .App {
 	text-align: center;
-
 }
 
 .App-logo {
@@ -25,13 +24,14 @@
 
 .App-header {
   position: fixed;
+  top: 0%;
   background-color:#F2F2F2;
   min-height: 5vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -49,6 +49,9 @@
 	}
 }
 
+.pageBody{
+  background-color: #849AAF;
+}
 .LowerSection {
   background-color: #F2F2F2 ;
   position: absolute;
@@ -64,18 +67,17 @@
 }
 
 .profile {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  left: 95vw;
-  top: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  /* width: 100px;
+  height: 100px; */
+  
 }
 
 .title {
   display: flex;
+  align-items: center;
   justify-content: center;
   top: 5vh;
-  justify-content: space-between;
-
 }
 
