@@ -20,7 +20,7 @@ function App() {
         <ProfilePicture picture={ProfilePicture}/>
       </header>
 <main>
-      <div>
+      <div className="column2">
       <ControlledCarousel />;
       </div>
 
@@ -31,7 +31,13 @@ function App() {
         </section>
         
       </main>
-		</div>
+		{/* </div> */}
+    <footer>
+        {/* Links to LinkedIn go in here */}
+        <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
+        <p1>Trademark 2022</p1>
+    </footer>
+    </div>
 	);
 }
 
