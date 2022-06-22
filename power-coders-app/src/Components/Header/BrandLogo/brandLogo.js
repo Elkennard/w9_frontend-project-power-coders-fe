@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./brand.css"
 const imageStyle = {
 	margin: "0 auto",
 	padding: 0,
@@ -8,9 +8,9 @@ const imageStyle = {
 	display: "block",
 };
 
-function BrandLogo() {
+function BrandLogo(props) {
 	return (
-		<div className="Image">
+		<div className={props.class}>
 		<h1>Wellbeing Toolkit</h1>
 			<img
 				src={require("./soc-logo.png")}
