@@ -7,7 +7,7 @@ function WellBeing (){
     function handleClick(value) {
         setIsClicked(!value);        
     }
-    console.log(isClicked);
+    
 
     return (
         <>
