@@ -24,28 +24,21 @@ function App() {
       </header>
       <main>
         <div className="column2">
-          <ControlledCarousel/>;
+          <ControlledCarousel className="carousel"/>
         </div>
 
         <section className="TopSection">
           <WelcomeUser user="Sarah"></WelcomeUser>
-          <Timer timer="countdown"></Timer>
+          {/* <Timer timer="countdown"></Timer> */}
         </section>
-        <section className="LowerSection">
+        
+      </main>
+      <section className="LowerSection">
           <SoundOnOff></SoundOnOff>
           <Quotes
-            // author="Abdullatif"
-            // quotes="Growth is internal, changes aren't noticed till too late."
           ></Quotes>
           <WellBeing></WellBeing>
         </section>
-      </main>
-      {/* </div> */}
-      {/* <footer>
-        {/* Links to LinkedIn go in here
-        <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
-        <p1>Trademark 2022</p1>
-      </footer> */}
     </div>
   );
 }

@@ -14,6 +14,7 @@
     /* height: 300px; Should be removed. Only for demonstration */
   }
   .column2 {
+    object-fit: contain;
     flex: 50%;
     padding-top: 200px;
     background-color: #849AAF;
@@ -27,7 +28,7 @@
   }
 
   .resourceText {
-    padding-right: 80px;
+    padding-right: 160px;
     padding-bottom: 30px;
   }
 
@@ -41,7 +42,7 @@
   }
 
   .resourceImage {
-    padding-left: 80px;
+    padding-left: 160px;
     padding-top: 60px;
   }
 
