@@ -14,6 +14,7 @@
     /* height: 300px; Should be removed. Only for demonstration */
   }
   .column2 {
+    object-fit: contain;
     flex: 50%;
     padding-top: 200px;
     background-color: #849AAF;
@@ -25,3 +26,40 @@
   h3 {
     font-size: 5vw;
   }
+
+  .resourceText {
+    padding-right: 160px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  .resourceH3 {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .resourceImage {
+    padding-left: 160px;
+    padding-top: 60px;
+  }
+
+  .resourceLink {
+      text-align: center;
+      background-color: #459869;
+      padding: 1% 2%;
+      font-size: 1.2rem;    
+      border-radius: 50px;
+      
+  }
+
+  .resourceLink > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .resourceLink:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}

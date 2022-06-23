@@ -23,29 +23,22 @@ function App() {
         <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
-        <section className="TopSection">
-          <WelcomeUser user="Sarah"></WelcomeUser>
-          <Timer id="timer"/>
-        </section>
         <div className="column2">
-          <ControlledCarousel />;
+          <ControlledCarousel className="carousel"/>
         </div>
 
-        <section className="LowerSection">
-          {/* <SoundOnOff></SoundOnOff> */}
+        <section className="TopSection">
+          <WelcomeUser user="Sarah"></WelcomeUser>
+          {/* <Timer timer="countdown"></Timer> */}
+        </section>
+        
+      </main>
+      <section className="LowerSection">
+          <SoundOnOff></SoundOnOff>
           <Quotes
-          // author="Abdullatif"
-          // quotes="Growth is internal, changes aren't noticed till too late."
           ></Quotes>
           <WellBeing></WellBeing>
         </section>
-      </main>
-      {/* </div> */}
-      {/* <footer>
-        {/* Links to LinkedIn go in here
-        <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
-        <p1>Trademark 2022</p1>
-      </footer> */}
     </div>
   );
 }
