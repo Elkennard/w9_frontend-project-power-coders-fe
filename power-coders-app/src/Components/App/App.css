@@ -89,3 +89,31 @@
   top: 5vh;
 }
 
+.TopSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: red;
+}
+/* #timer {
+  position: relative;
+  width: 226px;
+  height: 104px;
+  left: 1201px;
+  top: 113px;
+
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 125px;
+  /* or 347% */
+  /* color: #fff; */
+
+  
+  /* mix-blend-mode: normal;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+} */ 
+

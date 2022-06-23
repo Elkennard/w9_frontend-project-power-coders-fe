@@ -20,22 +20,22 @@ function App() {
       <header className="App-header">
         <div id="page-wrap"></div>
         <BrandLogo class="title" logo={BrandLogo} />
-          <ProfilePicture className="profile" picture={ProfilePicture} />
+        <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
-        <div className="column2">
-          <ControlledCarousel/>;
-        </div>
-
         <section className="TopSection">
           <WelcomeUser user="Sarah"></WelcomeUser>
-          <Timer timer="countdown"></Timer>
+          <Timer id="timer"/>
         </section>
+        <div className="column2">
+          <ControlledCarousel />;
+        </div>
+
         <section className="LowerSection">
           {/* <SoundOnOff></SoundOnOff> */}
           <Quotes
-            // author="Abdullatif"
-            // quotes="Growth is internal, changes aren't noticed till too late."
+          // author="Abdullatif"
+          // quotes="Growth is internal, changes aren't noticed till too late."
           ></Quotes>
           <WellBeing></WellBeing>
         </section>
