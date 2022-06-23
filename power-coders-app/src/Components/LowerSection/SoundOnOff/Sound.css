@@ -52,3 +52,15 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .soundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .soundContainer > p {
+    font-size: 0.9vw;
+    margin-bottom: 10%;
+  }

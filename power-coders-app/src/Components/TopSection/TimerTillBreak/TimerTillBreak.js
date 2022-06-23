@@ -48,7 +48,7 @@ function Timer(props) {
     }
 
     seconds = seconds + 1;
-    element.innerHTML = `${minutes}:${seconds}`;
+    // element.innerHTML = `${minutes}:${seconds}`;
   }, 1000);
 
   function myStopFunction(e) {
