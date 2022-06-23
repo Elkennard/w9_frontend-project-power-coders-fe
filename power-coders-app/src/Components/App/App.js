@@ -20,7 +20,7 @@ function App() {
       <header className="App-header">
         <div id="page-wrap"></div>
         <BrandLogo class="title" logo={BrandLogo} />
-          <ProfilePicture className="profile" picture={ProfilePicture} />
+        <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
         <div className="column2">
