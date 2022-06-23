@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./wellBeingForm.css";
 
 function WellbeingForm({handleclick, isclicked}) {
-  const [feedback, setFeedback] = useState(false);
+  const [feedbackSent, setFeedbackSent] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -13,8 +13,7 @@ function WellbeingForm({handleclick, isclicked}) {
     }
     formObject.score = Number(formObject.score);
     postFeedback(formObject);
-    setFeedback(!feedback);
-    handleclick(isclicked);
+    setFeedbackSent(true);    
   }
 
   async function postFeedback(formObject) {
@@ -36,6 +35,8 @@ function WellbeingForm({handleclick, isclicked}) {
         <button onClick={() => {handleclick(isclicked)}}>x</button>
     </div>
       <h2>Wellbeing Check-in</h2>
+      { !feedbackSent && (
+        <div>
       <div className="formInputContainer">
         <label htmlFor="name">Name: </label>
         <input
@@ -70,8 +71,20 @@ function WellbeingForm({handleclick, isclicked}) {
         <label htmlFor="score5">😄</label>
       </fieldset>
       <input className="submit" type="submit" value="Submit"></input>
+      </div>
+      )}
+      {feedbackSent && (
+        <div>
+          <p className="thankyouText">Thank You! Your wellbeing scores have been sent to your enablement coach for review.</p>
+        </div>
+      )}
+      
     </form>
+   
   );
 }
+
+// if feedbackSent is true
+  // show "Thank You! Your wellbeing scores have been sent to your enablement coach for review"
 
 export default WellbeingForm;
