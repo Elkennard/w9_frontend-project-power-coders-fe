@@ -30,7 +30,7 @@ body, html {
   font-family: 'Oswald';
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #849AAF;
 }

@@ -4,6 +4,8 @@
 
 import react, { useState, useEffect } from "react";
 
+import "./quotes.css"
+
 function Quotes() {
   const [quote, setQuote] = useState([]);
 
@@ -33,8 +35,8 @@ function Quotes() {
 
   return (
     <section>
-      <h2>{quote.text}</h2>
-      <h3>- {quote.author}</h3>
+      <h2 className="quoteText">{quote.text}</h2>
+      <h3 className="quoteAuthor">- {quote.author}</h3>
     </section>
   );
 }

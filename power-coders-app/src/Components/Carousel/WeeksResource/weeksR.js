@@ -36,7 +36,7 @@ export default function ControlledCarousel() {
       {resources.map((resource, index) => {
         const imageURL = `${imgURL}${resource.image_path}`        
         return (
-          <Carousel.Item className="consistant" key={index} interval={5000}>
+          <Carousel.Item className="consistant" key={index} interval={10000}>
             <div class="row">
               <div class="column">
               <div className="resourceImage">
