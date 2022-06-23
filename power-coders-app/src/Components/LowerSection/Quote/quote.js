@@ -4,29 +4,47 @@
 
 import react, { useState, useEffect } from "react";
 
+
+
 function Quotes() {
     const [quote, setQuote] = useState([]);
-    async function randomQuote() {
-        const response = await fetch('https://zenquotes.io/api/random', {
-            method: "GET",
-            mode: 'no-cors'
-        }); 
-        const data = await response.json();
-        console.log(data)
-                    }
-    randomQuote();
+
+    
+
+    
 
     useEffect(() => {
-        
+        function randomQuote(quotes) {
+            console.log(quotes)
+            const randomNum = Math.floor(Math.random() * 1643);
+            console.log(randomNum)
+            const quote = quotes[randomNum];
+            if (quote.author === null) {
+                const newQuote = {...quote, author: "Anon"};
+                console.log(newQuote);
+                return newQuote;
+            }
+            console.log (quote);
+            return quote;
+        }
+    
+        async function getQuotes() {
+            const response = await fetch('https://type.fit/api/quotes'); 
+            const data = await response.json();
+            console.log(data[0])
+            const newQuote = randomQuote(data);
+            setQuote(newQuote);        
+        }
+        getQuotes();
     },[])
 
-    return ([
+    return (
         <section>        
-            <h2 >{quote.q}</h2>
-            <h3>-{quote.a}</h3>
+            <h2 >{quote.text}</h2>                 
+            <h3>- {quote.author}</h3>
         </section>
 
-    ]
+    
     )
 }
 
