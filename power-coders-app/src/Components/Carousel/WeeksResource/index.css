@@ -15,7 +15,13 @@
   }
   .column2 {
     flex: 50%;
-    padding: 10px;
+    padding-top: 200px;
     background-color: #849AAF;
+    padding-right: 20px;
+    text-align: justify;
     /* height: 300px; Should be removed. Only for demonstration */
+  }
+
+  h3 {
+    font-size: 5vw;
   }

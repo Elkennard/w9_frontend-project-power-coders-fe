@@ -20,34 +20,32 @@ function App() {
       <header className="App-header">
         <div id="page-wrap"></div>
         <BrandLogo class="title" logo={BrandLogo} />
-        <div className="profile">
-          <ProfilePicture picture={ProfilePicture} />
-        </div>
+          <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
         <div className="column2">
-          <ControlledCarousel />;
+          <ControlledCarousel/>;
         </div>
 
         <section className="TopSection">
-          <WelcomeUser user="Farah"></WelcomeUser>
+          <WelcomeUser user="Sarah"></WelcomeUser>
           <Timer timer="countdown"></Timer>
         </section>
         <section className="LowerSection">
-          <SoundOnOff></SoundOnOff>
+          {/* <SoundOnOff></SoundOnOff> */}
           <Quotes
-            author="Abdullatif"
-            quotes="Growth is internal, changes aren't noticed till too late."
+            // author="Abdullatif"
+            // quotes="Growth is internal, changes aren't noticed till too late."
           ></Quotes>
           <WellBeing></WellBeing>
         </section>
       </main>
       {/* </div> */}
-      <footer>
-        {/* Links to LinkedIn go in here */}
+      {/* <footer>
+        {/* Links to LinkedIn go in here
         <p>Made by Craig, Dave, Emma, Farah and Rajesh</p>
         <p1>Trademark 2022</p1>
-      </footer>
+      </footer> */}
     </div>
   );
 }
