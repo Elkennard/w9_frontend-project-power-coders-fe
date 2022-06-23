@@ -24,7 +24,7 @@ function App() {
       </header>
       <main>
         <div className="column2">
-          <ControlledCarousel className="carousel"/>;
+          <ControlledCarousel className="carousel"/>
         </div>
 
         <section className="TopSection">
