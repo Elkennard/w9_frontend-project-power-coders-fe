@@ -39,19 +39,23 @@ export default function ControlledCarousel() {
           <Carousel.Item key={index} interval={5000}>
             <div class="row">
               <div class="column">
+              <div className="resourceImage">
                 <img
                   className="d-block w-100"
                   src={imageURL.toString()}
                   alt="week 1 slide of carousel"
                 />
+                </div>
               </div>
               <Carousel.Caption class="column">
-                <h3>{`Week ${resource.week}`}</h3>
-                <h3>{resource.title}</h3>
+              <div className="resourceText">
+                <h3 className="resourceH3">{`Week ${resource.week}`}</h3>
+                <h3 className="resourceH3">{resource.title}</h3>
                 <p>{resource.description}</p>
-                <a href={resource.link} rel="noreferrer" target="_blank">
+                <div className="resourceLink"><a href={resource.link} rel="noreferrer" target="_blank">
                   Further Reading
-                </a>
+                </a></div>
+                </div>
               </Carousel.Caption>
 
               {/* closes row div */}

@@ -1,11 +1,11 @@
 import React from "react";
 import "./profile.css"
 
-const imageStyle = {
-	padding: 0,
-	height: "50px",
-	display: "block",
-};
+// const imageStyle = {
+// 	padding: 0,
+// 	height: "50px",
+// 	display: "block",
+// };
 
 function ProfilePicture() {
 	return (

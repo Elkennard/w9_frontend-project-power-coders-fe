@@ -25,3 +25,40 @@
   h3 {
     font-size: 5vw;
   }
+
+  .resourceText {
+    padding-right: 80px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+
+  .resourceH3 {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .resourceImage {
+    padding-left: 80px;
+    padding-top: 60px;
+  }
+
+  .resourceLink {
+      text-align: center;
+      background-color: #459869;
+      padding: 1% 2%;
+      font-size: 1.2rem;    
+      border-radius: 50px;
+      font-weight: bolder;
+  }
+
+  .resourceLink > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .resourceLink:hover {
+    transform: scale(105%);
+    cursor: pointer;
+}
