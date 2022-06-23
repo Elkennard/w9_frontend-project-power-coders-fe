@@ -31,17 +31,17 @@ useEffect(() => {
         <div class="column">
         <img
           className="d-block w-100"
-          // src="./WeekImages/1_hero_journey.png"
           src={require("./WeekImages/1_hero_journey.png")}
-          // src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Chain_link_icon.png"
           alt="week 1 slide of carousel"
         />
         </div>
         
         
         <Carousel.Caption class="column">
+          <h3>{`Week ${resource.week}`}</h3>
           <h3>{resource.title}</h3>
           <p>{resource.description}</p>
+          <button href={resource.link} target='_blank'>Further Reading</button>
         </Carousel.Caption>
 
       {/* closes row div */}
@@ -56,7 +56,6 @@ useEffect(() => {
       <div class="column">
         <img
           className="d-block w-100"
-          // src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Chain_link_icon.png"
           src={require("./WeekImages/2_personality_types.png")}
           alt="Second slide"
         />
@@ -64,7 +63,9 @@ useEffect(() => {
 
         <Carousel.Caption class="column">
           <h3>Week 2</h3>
+          <h3>Topic Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button>Further Reading</button>
         </Carousel.Caption>
         </div>
       </Carousel.Item>
@@ -75,7 +76,6 @@ useEffect(() => {
       <div class="column">
         <img
           className="d-block w-100"
-          // src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Chain_link_icon.png"
           src={require("./WeekImages/3_perspectives_ideas.png")}
           alt="Third slide"
         />
@@ -83,9 +83,9 @@ useEffect(() => {
 
         <Carousel.Caption class = "column">
           <h3>Week 3</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Topic Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button>Further Reading</button>
         </Carousel.Caption>
         </div>
       </Carousel.Item>
