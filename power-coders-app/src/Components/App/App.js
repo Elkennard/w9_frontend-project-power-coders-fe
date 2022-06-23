@@ -23,22 +23,20 @@ function App() {
         <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
-        <div className="column2">
-          <ControlledCarousel className="carousel"/>
-        </div>
-
         <section className="TopSection">
           <WelcomeUser user="Sarah"></WelcomeUser>
-          {/* <Timer timer="countdown"></Timer> */}
+          <Timer timer="countdown"></Timer>
         </section>
-        
+
+        <div className="column2">
+          <ControlledCarousel className="carousel" />
+        </div>
       </main>
       <section className="LowerSection">
-          <SoundOnOff></SoundOnOff>
-          <Quotes
-          ></Quotes>
-          <WellBeing></WellBeing>
-        </section>
+        <SoundOnOff></SoundOnOff>
+        <Quotes></Quotes>
+        <WellBeing></WellBeing>
+      </section>
     </div>
   );
 }

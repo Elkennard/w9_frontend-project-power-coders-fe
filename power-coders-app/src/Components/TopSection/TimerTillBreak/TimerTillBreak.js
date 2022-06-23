@@ -10,8 +10,10 @@ function Timer(props) {
 
   // I first make the 60 second timer with the set interval and it should run till 60, then after hitting 60 the variable is reset to 0.
 
-  const [updateTimer, setUpdateTimer] = useState([0, 0]);
+ 
+  // const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [timer, setTimer] = useState(0);
+  const breakTime = 5;
   let minutes = Math.floor(timer/60);
   let seconds = timer%60;
   useEffect(() => {
@@ -21,11 +23,15 @@ function Timer(props) {
   }, [timer]);
   console.log(timer);
 
-if (minutes >= 1){
+  // function handleTimerClick() {
+  //   if (timer) {}
+  // }
+
+if (minutes >= breakTime){
   return <h3 id="timer">Break's Over</h3>;
 }
   // bordersTime()
-  return <h3 id="timer">Timer {minutes.toString().padStart(2,"0")}:{seconds.toString().padStart(2,"0")}</h3>;
+  return <h3 id="timer">Break Timer: {minutes.toString().padStart(1,"0")}:{seconds.toString().padStart(2,"0")}/{breakTime}:00</h3>;
 }
 
 export default Timer;

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+:root {
+  --main-colour: #849AAF;
+  --secondary-colour: #459869;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -32,7 +37,7 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: #849AAF;
+  background-color: var(--main-colour);
 }
 
 .App-logo {
@@ -111,7 +116,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: red;
+  
 }
 /* #timer {
   position: relative;

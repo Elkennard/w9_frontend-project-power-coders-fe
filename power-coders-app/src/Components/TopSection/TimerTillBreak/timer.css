@@ -1,15 +1,13 @@
 #timer {
   position: absolute;
-  width: 226px;
-  height: 104px;
-  left: 85vw;
-  top: 10vh;
+  right: 2vw;
+  top: 12vh;
 
   font-family: "Asap";
   font-style: bolder;
   font-weight: 400;
   font-size: 36px;
-  line-height: 125px;
+  
   /* or 347% */
   color: black;
 }

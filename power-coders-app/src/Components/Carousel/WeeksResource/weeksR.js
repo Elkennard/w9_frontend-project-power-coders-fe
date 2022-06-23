@@ -50,12 +50,12 @@ export default function ControlledCarousel() {
               <Carousel.Caption class="column">
               <div className="resourceText">
                 <h3 className="resourceH3">{`Week ${resource.week}`}</h3>
-                <h3 className="resourceH3">{resource.title}</h3>
+                <h3 className="resourceTitle">{resource.title}</h3>
                 <p>{resource.description}</p>
-                <div className="resourceLink"><a href={resource.link} rel="noreferrer" target="_blank">
+              </div>
+              <div className="resourceLink"><a href={resource.link} rel="noreferrer" target="_blank">
                   Further Reading
                 </a></div>
-                </div>
               </Carousel.Caption>
 
               {/* closes row div */}
