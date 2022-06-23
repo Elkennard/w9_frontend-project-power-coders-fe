@@ -50,18 +50,20 @@ function WellbeingForm({handleclick, isclicked}) {
       <div className="formInputContainer">
         <label htmlFor="coach">Enablement coach: </label>
         <select required className="formItem" id="coach" name="coach">
-          <option value="Rikki">Rikki</option>
-          <option value="Vicki">Vicki</option>
+          <option value="" selected disabled hidden>Select</option>
+          <option value="Rikiah Williams">Rikiah Williams</option>
+          <option value="Victoriah Meah">Victoriah Meah</option>
+          <option value="Jessica Roach">Jessica Roach</option>
         </select>
       </div>
       <fieldset required className="formItem">
-        <legend>How is your wellbeing today?</legend>
+        <legend className="wellbeingCheckText">How would you rate your wellbeing today?</legend>
         <label htmlFor="score1">😢</label>
         <input type="radio" id="score1" name="score" value="1"></input>
         <label htmlFor="score2"></label>
         <input type="radio" id="score2" name="score" value="2"></input>
         <label htmlFor="score3"></label>
-        <input type="radio" id="score3" name="score" value="3"></input>
+        <input type="radio" id="score3" name="score" value="3" defaultChecked required></input>
         <label htmlFor="score4"></label>
         <input type="radio" id="score4" name="score" value="4"></input>
         <input type="radio" id="score5" name="score" value="5"></input>
