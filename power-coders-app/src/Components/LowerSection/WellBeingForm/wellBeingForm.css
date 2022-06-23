@@ -46,13 +46,13 @@
 }
 
 .submit {
-    background-color: #459869;
+    background-color: var(--secondary-colour);
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid var(--secondary-colour);
     padding: 2% 6%;
     font-size: 1.3vw;;    
     border-radius: 20px;
-    font-weight: bolder;
+    
     margin-bottom: 4%;
 }
 
@@ -73,15 +73,17 @@
 /* Make input headings bold */
 
 .wellbeingCheckText {
-    font-weight: bold;
     padding-bottom: 5%;
     font-size: 1.2vw;
+    line-height: 100%;
 }
 
 .formInputContainer {
     margin-bottom: 10%;
     width: 100%;
     font-size: 0.9vw ;
+    font-family: "Asap";
+    
 }
 
 .formInputContainer > input, .formInputContainer > select {
@@ -105,6 +107,7 @@ fieldset > input {
 
 .thankyouText {
     font-size: 1vw;
-    margin: 32.5% 5%;
-    padding-bottom: 10%;
+    margin: 22% 5%;
+    padding-bottom: 15%;
+    font-family: "Asap";
 }
