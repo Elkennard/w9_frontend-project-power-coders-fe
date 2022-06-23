@@ -32,7 +32,7 @@ function App() {
           <Timer timer="countdown"></Timer>
         </section>
         <section className="LowerSection">
-          {/* <SoundOnOff></SoundOnOff> */}
+          <SoundOnOff></SoundOnOff>
           <Quotes
             // author="Abdullatif"
             // quotes="Growth is internal, changes aren't noticed till too late."

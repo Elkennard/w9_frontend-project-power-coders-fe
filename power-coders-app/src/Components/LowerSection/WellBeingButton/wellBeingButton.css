@@ -1,7 +1,7 @@
 .wellbeingButton {
     background-color: #459869;
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid;
     padding: 1% 2%;
     font-size: 1.2rem;    
     border-radius: 50px;
