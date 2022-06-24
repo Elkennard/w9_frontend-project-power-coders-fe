@@ -52,7 +52,8 @@ body, html {
 }
 
 .App-header {
-  position: fixed;
+  
+  padding: 4% 0;
   top: 0%;
   background-color:#F2F2F2;
   min-height: 5vh;

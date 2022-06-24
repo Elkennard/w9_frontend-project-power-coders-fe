@@ -16,7 +16,7 @@ export default function ControlledCarousel() {
     // fetch weeks 1 -3, push them to an array, set that to the state
     async function fetchWeekResources(currentWeek) {
       const weeksArr = [];
-      for (let i = currentWeek; i < currentWeek + 3; i++) {
+      for (let i = currentWeek; i < currentWeek + 8; i++) {
         const response = await fetch(
           `http://localhost:3001/resources/week/${i}`
         );

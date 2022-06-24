@@ -28,7 +28,7 @@ function Timer(props) {
   // }
 
 if (minutes >= breakTime){
-  return <h3 id="timer">Break's Over</h3>;
+  return <h3 id="timer">Break's finished!</h3>;
 }
   // bordersTime()
   return <h3 id="timer">Break Timer: {minutes.toString().padStart(1,"0")}:{seconds.toString().padStart(2,"0")}/{breakTime}:00</h3>;
