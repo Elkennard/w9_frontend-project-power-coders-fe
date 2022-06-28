@@ -6,7 +6,7 @@ import Quotes from "../LowerSection/Quote/quote";
 import WellBeing from "../LowerSection/WellBeingButton/wellBeingButton";
 import SoundOnOff from "../LowerSection/SoundOnOff/SoundOnOff";
 import WelcomeUser from "../TopSection/WelcomeUser/welcomeUser";
-import Timer from "../TopSection/TimerTillBreak/TimerTillBreak";
+import Timer from "../TopSection/Timer/timer";
 import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -24,7 +24,7 @@ function App() {
       </header>
       <main>
         <section className="TopSection">
-          <WelcomeUser user="Sarah"></WelcomeUser>
+          <WelcomeUser />
           <Timer timer="countdown"></Timer>
         </section>
 

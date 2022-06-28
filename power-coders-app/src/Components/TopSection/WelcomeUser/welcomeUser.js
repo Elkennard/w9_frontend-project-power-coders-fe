@@ -1,9 +1,7 @@
-import "./WelcomUser.css"
+import "./WelcomeUser.css";
 
-function WelcomeUser(props){
-    return (
-        <h3 id="welcome">Welcome, {props.user}!</h3>
-    )
+function WelcomeUser(user) {
+  return <h3 id="welcomeMessage">Welcome!</h3>;
 }
 
-export default  WelcomeUser; 
+export default WelcomeUser;

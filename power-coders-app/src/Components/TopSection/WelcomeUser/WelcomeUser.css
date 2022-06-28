@@ -1,18 +1,12 @@
-#welcome {
+#welcomeMessage {
   position: absolute;
-  
   left: 20px;
   top: 20vh;
-
   font-family: "Asap";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  
-  /* or 347% */
-
   color: black;
-
   mix-blend-mode: normal;
   display: flex;
   justify-self: flex-start;
