@@ -1,8 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import "./index.css";
+import "./carousel.css";
 import { useState, useEffect } from "react";
-
 
 export default function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -13,7 +12,6 @@ export default function ControlledCarousel() {
     setIndex(selectedIndex);
   };
   useEffect(() => {
-    // fetch weeks 1 -3, push them to an array, set that to the state
     async function fetchWeekResources(currentWeek) {
       const weeksArr = [];
       for (let i = currentWeek; i < currentWeek + 8; i++) {
@@ -29,36 +27,35 @@ export default function ControlledCarousel() {
     fetchWeekResources(1);
   }, []);
 
+  //some classNames are using bootstrap utilities.
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-
-    {/* maps over the resources state array and assigns the object properties to html elements */}
       {resources.map((resource, index) => {
-        const imageURL = `${imgURL}${resource.image_path}`        
+        const imageURL = `${imgURL}${resource.image_path}`;
         return (
           <Carousel.Item className="consistant" key={index} interval={10000}>
             <div class="row">
               <div class="column">
-              <div className="resourceImage">
-                <img
-                  className="d-block w-100"
-                  src={imageURL.toString()}
-                  alt="week 1 slide of carousel"
-                />
+                <div className="resourceImage">
+                  <img
+                    className="d-block w-100"
+                    src={imageURL.toString()}
+                    alt="slide of carousel"
+                  />
                 </div>
               </div>
               <Carousel.Caption class="column">
-              <div className="resourceText">
-                <h3 className="resourceH3">{`Week ${resource.week}`}</h3>
-                <h3 className="resourceTitle">{resource.title}</h3>
-                <p>{resource.description}</p>
-              </div>
-              <div className="resourceLink"><a href={resource.link} rel="noreferrer" target="_blank">
-                  Further Reading
-                </a></div>
+                <div className="resourceText">
+                  <h3 className="resourceH3">{`Week ${resource.week}`}</h3>
+                  <h3 className="resourceTitle">{resource.title}</h3>
+                  <p className="resourceDescription">{resource.description}</p>
+                </div>
+                <div className="resourceLink">
+                  <a href={resource.link} rel="noreferrer" target="_blank">
+                    Further Reading
+                  </a>
+                </div>
               </Carousel.Caption>
-
-              {/* closes row div */}
             </div>
           </Carousel.Item>
         );

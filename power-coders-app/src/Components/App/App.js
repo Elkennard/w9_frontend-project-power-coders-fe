@@ -7,7 +7,7 @@ import WellBeingButton from "../LowerSection/WellBeingButton/wellBeingButton";
 import SoundOnOff from "../LowerSection/SoundOnOff/SoundOnOff";
 import WelcomeUser from "../TopSection/WelcomeUser/welcomeUser";
 import Timer from "../TopSection/Timer/timer";
-import ControlledCarousel from "../Carousel/WeeksResource/weeksR";
+import ControlledCarousel from "../Carousel/carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
