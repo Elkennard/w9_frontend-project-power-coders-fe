@@ -17,7 +17,7 @@ function WellbeingForm({ handleclick, isclicked }) {
   }
 
   async function postFeedback(formObject) {
-    const response = await fetch("http://localhost:3001/feedback", {
+    await fetch("http://localhost:3001/feedback", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -25,13 +25,11 @@ function WellbeingForm({ handleclick, isclicked }) {
       },
       body: JSON.stringify(formObject),
     });
-    const data = await response.json();
-    console.log(data);
   }
 
   return (
     <form className="wellbeing-form" onSubmit={handleSubmit}>
-      <div className="close">
+      <div className="closeButton">
         <button
           onClick={() => {
             handleclick(isclicked);
@@ -101,8 +99,5 @@ function WellbeingForm({ handleclick, isclicked }) {
     </form>
   );
 }
-
-// if feedbackSent is true
-// show "Thank You! Your wellbeing scores have been sent to your enablement coach for review"
 
 export default WellbeingForm;

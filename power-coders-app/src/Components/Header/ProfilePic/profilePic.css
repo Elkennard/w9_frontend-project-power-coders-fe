@@ -1,0 +1,12 @@
+.profilePicImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--main-colour);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}

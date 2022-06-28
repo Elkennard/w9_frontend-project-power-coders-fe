@@ -1,113 +1,108 @@
 .wellbeing-form {
-    z-index: 1;
-    position: absolute;
-    right: 0.5%;
-    bottom: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #849AAF;
-    background-color: #F2F2F2;
-    width: 20%;  
-    border-radius: 5%;
-    padding: 0 0 1% 0;
-    font-size: 1vw;
+  z-index: 1;
+  position: absolute;
+  right: 0.5%;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--main-colour);
+  background-color: var(--tertiary-colour);
+  width: 20%;
+  border-radius: 5%;
+  padding: 0 0 1% 0;
+  font-size: 1vw;
 }
 
 .wellbeing-form > h2 {
-    color: #6989a7;
-    padding: 0;
-    margin: 0 0 10% 0;  
-    font-size: 2vw; 
+  color: var(--main-colour);
+  padding: 0;
+  margin: 0 0 10% 0;
+  font-size: 2vw;
 }
 
-.close {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-   
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-.close > button {
-    color: #ff000080;
-    font-size: 1.6vw;
-    font-weight: bold;
-    margin-right: 4%;
-    padding: 0;
-    border:none;
-    border-radius: 100%;
+.closeButton > button {
+  color: #ff000080;
+  font-size: 1.6vw;
+  font-weight: bold;
+  margin-right: 4%;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
 }
 
-.close > button:hover {
-    color: red;
-    cursor: pointer;
+.closeButton > button:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .submit {
-    background-color: var(--secondary-colour);
-    color: #fff;
-    border: 1px solid var(--secondary-colour);
-    padding: 2% 6%;
-    font-size: 1.3vw;;    
-    border-radius: 20px;
-    
-    margin-bottom: 4%;
+  background-color: var(--secondary-colour);
+  color: #fff;
+  border: 1px solid var(--secondary-colour);
+  padding: 2% 6%;
+  font-size: 1.3vw;
+  border-radius: 20px;
+
+  margin-bottom: 4%;
 }
 
 .submit:hover {
-    transform: scale(105%);
-    cursor: pointer;
+  transform: scale(105%);
+  cursor: pointer;
 }
 
 .formItem {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .formItem:last-of-type {
-    border: none;
-    
+  border: none;
 }
 
-/* Make input headings bold */
-
 .wellbeingCheckText {
-    padding-bottom: 5%;
-    font-size: 1.2vw;
-    line-height: 100%;
+  padding-bottom: 5%;
+  font-size: 1.2vw;
+  line-height: 100%;
 }
 
 .formInputContainer {
-    margin-bottom: 10%;
-    width: 100%;
-    font-size: 0.9vw ;
-    font-family: "Asap";
-    
+  margin-bottom: 10%;
+  width: 100%;
+  font-size: 0.9vw;
+  font-family: "Asap";
 }
 
-.formInputContainer > input, .formInputContainer > select {
-    margin: 0 0 0 2%;
-    padding: 2%;
-    border-radius: 5px;
-    
+.formInputContainer > input,
+.formInputContainer > select {
+  margin: 0 0 0 2%;
+  padding: 2%;
+  border-radius: 5px;
 }
 
 fieldset > label:first-of-type {
-    margin-right: 2%;
+  margin-right: 2%;
 }
 
 fieldset > label:last-of-type {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 fieldset > input {
-    margin-right: 2%;
+  margin-right: 2%;
 }
 
 .thankyouText {
-    font-size: 1vw;
-    margin: 22% 5%;
-    padding-bottom: 15%;
-    font-family: "Asap";
+  font-size: 1vw;
+  margin: 22% 5%;
+  padding-bottom: 15%;
+  font-family: "Asap";
 }

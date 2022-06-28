@@ -3,6 +3,7 @@
 :root {
   --main-colour: #849AAF;
   --secondary-colour: #459869;
+  --tertiary-colour: #F2F2F2;
 }
 
 body {
@@ -90,12 +91,6 @@ body, html {
   align-items: center;
   padding: 0 2%;
   width: 100%;
-}
-
-.Image {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10px;
 }
 
 .profile {

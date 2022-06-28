@@ -3,7 +3,7 @@ import BrandLogo from "../Header/BrandLogo/brandLogo";
 import ProfilePicture from "../Header/ProfilePic/profilePic";
 import BurgerMenu from "../Header/Burger Menu/burgerMenu";
 import Quotes from "../LowerSection/Quote/quote";
-import WellBeing from "../LowerSection/WellBeingButton/wellBeingButton";
+import WellBeingButton from "../LowerSection/WellBeingButton/wellBeingButton";
 import SoundOnOff from "../LowerSection/SoundOnOff/SoundOnOff";
 import WelcomeUser from "../TopSection/WelcomeUser/welcomeUser";
 import Timer from "../TopSection/Timer/timer";
@@ -19,7 +19,7 @@ function App() {
       />
       <header className="App-header">
         <div id="page-wrap"></div>
-        <BrandLogo class="title" logo={BrandLogo} />
+        <BrandLogo />
         <ProfilePicture className="profile" picture={ProfilePicture} />
       </header>
       <main>
@@ -35,7 +35,7 @@ function App() {
       <section className="LowerSection">
         <SoundOnOff></SoundOnOff>
         <Quotes></Quotes>
-        <WellBeing></WellBeing>
+        <WellBeingButton/>
       </section>
     </div>
   );

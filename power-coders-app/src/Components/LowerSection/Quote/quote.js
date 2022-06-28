@@ -1,10 +1,6 @@
-// I understand I need a function that will return a quote with Author name.
-//import react from "react"
-//import css from "./quotes.css"
+import { useState, useEffect } from "react";
 
-import react, { useState, useEffect } from "react";
-
-import "./quotes.css"
+import "./quote.css";
 
 function Quotes() {
   const [quote, setQuote] = useState([]);

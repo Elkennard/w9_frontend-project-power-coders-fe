@@ -1,0 +1,13 @@
+h1 {
+  color: black;
+  font-family: Oswald;
+  margin-right: 10px;
+}
+
+.brandImage {
+  margin: 0 auto;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  display: block;
+}
