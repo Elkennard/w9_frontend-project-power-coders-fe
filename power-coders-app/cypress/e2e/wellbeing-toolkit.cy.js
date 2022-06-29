@@ -17,7 +17,7 @@ describe("When first loaded, the landing page...", () => {
     cy.get(".wellbeingButton").should("have.text", "Wellbeing Check-in?");
   });
 
-  it("should have a wellbeing resource link and it works.", () => {
+  it("should have a wellbeing resource link", () => {
     cy.get(".resourceLink").should("be.visible");
   });
 
@@ -26,26 +26,7 @@ describe("When first loaded, the landing page...", () => {
     cy.get(".quoteAuthor").should("be.visible");
   });
 
-  it("should display a break timer", ()=> {
+  it("should display a break timer", () => {
     cy.get("#timer").should("be.visible");
-  })
-
-
-  it("should be able to click the wellbeing button", ()=> {
-    cy.get(".wellbeingButton").click();
-  })
-
-  
-  it("should have a burger menu and be able to click it", ()=> {
-    cy.get("#react-burger-menu-btn").click();
-  })
-
-  it("should have menu items within the burger menu", ()=> {
-    cy.get(".bm-item.menu-item").should("be.visible");
-  })
-
-  
-  it("should close the burger menu", ()=> {
-    cy.get("#react-burger-cross-btn").click();
-  })
+  });
 });
