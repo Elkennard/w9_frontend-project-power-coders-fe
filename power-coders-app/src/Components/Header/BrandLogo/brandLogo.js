@@ -7,7 +7,7 @@ function BrandLogo() {
       <h1 className="h1title">Wellbeing Toolkit</h1>
       <img
         className="brandImage"
-        src={require("./brandLogo.png")}
+        src="/media/images/brandLogo.png"
         alt="School of Code logo"
       />
     </div>

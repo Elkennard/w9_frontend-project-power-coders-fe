@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 function SoundOnOff() {
   const [audioPlaying, setAudioPlaying] = useState(false);
-  const [audio, setAudio] = useState(new Audio("/audio/waves.mp3"));
+  const [audio, setAudio] = useState(new Audio("/media/audio/waves.mp3"));
 
   function toggleAudio() {
     setAudioPlaying(!audioPlaying);

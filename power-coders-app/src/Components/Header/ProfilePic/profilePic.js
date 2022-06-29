@@ -5,7 +5,7 @@ function ProfilePicture() {
   return (
     <img
       className="profilePicImage"
-      src={require("./profilePic.jpg")}
+      src="/media/images/profilePic.jpg"
       alt="Currently logged in users face"
     />
   );

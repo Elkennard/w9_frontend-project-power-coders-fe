@@ -12,29 +12,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App" id="outer-container">
-      <BurgerMenu
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-      />
-      <header className="App-header">
+    <div className="app-container">
+      <BurgerMenu />
+      <header>
         <div id="page-wrap"></div>
         <BrandLogo />
-        <ProfilePicture className="profile" picture={ProfilePicture} />
+        <ProfilePicture />
       </header>
       <main>
-        <section className="TopSection">
+        <section className="top-section">
           <WelcomeUser />
-          <Timer timer="countdown"></Timer>
+          <Timer/>
         </section>
-
         <div className="column2">
-          <ControlledCarousel className="carousel" />
+          <ControlledCarousel />
         </div>
       </main>
-      <section className="LowerSection">
-        <SoundOnOff></SoundOnOff>
-        <QuotesDisplay></QuotesDisplay>
+      <section className="lower-section">
+        <SoundOnOff />
+        <QuotesDisplay />
         <WellBeingButton/>
       </section>
     </div>

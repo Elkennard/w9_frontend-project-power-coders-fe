@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export default function ControlledCarousel() {
   const [index, setIndex] = useState(0);
   const [resources, setResources] = useState([]);
-  const imgURL = "/WeekImages/";
+  const imgURL = "/media/images/weekImages/";
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -30,7 +30,7 @@ export default function ControlledCarousel() {
 
   //some classNames are using bootstrap utilities.
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel className="carousel-container" activeIndex={index} onSelect={handleSelect}>
       {resources.map((resource, index) => {
         const imageURL = `${imgURL}${resource.image_path}`;
         return (

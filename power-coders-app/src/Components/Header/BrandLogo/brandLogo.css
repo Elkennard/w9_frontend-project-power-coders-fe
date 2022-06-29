@@ -11,3 +11,10 @@ h1 {
   height: 80px;
   display: block;
 }
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5vh;
+}
