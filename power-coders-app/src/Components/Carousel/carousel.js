@@ -13,8 +13,9 @@ export default function ControlledCarousel() {
   };
   useEffect(() => {
     async function fetchWeekResources(currentWeek) {
+      const NUM_WEEKS_IN_CAROUSEL = 8;
       const weeksArr = [];
-      for (let i = currentWeek; i < currentWeek + 8; i++) {
+      for (let i = currentWeek; i < currentWeek + NUM_WEEKS_IN_CAROUSEL; i++) {
         const response = await fetch(
           `http://localhost:3001/resources/week/${i}`
         );

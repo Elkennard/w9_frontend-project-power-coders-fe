@@ -2,7 +2,7 @@ import "./App.css";
 import BrandLogo from "../Header/BrandLogo/brandLogo";
 import ProfilePicture from "../Header/ProfilePic/profilePic";
 import BurgerMenu from "../Header/Burger Menu/burgerMenu";
-import Quotes from "../LowerSection/Quote/quote";
+import QuotesDisplay from "../LowerSection/QuotesDisplay/quotesDisplay";
 import WellBeingButton from "../LowerSection/WellBeingButton/wellBeingButton";
 import SoundOnOff from "../LowerSection/SoundOnOff/SoundOnOff";
 import WelcomeUser from "../TopSection/WelcomeUser/welcomeUser";
@@ -34,7 +34,7 @@ function App() {
       </main>
       <section className="LowerSection">
         <SoundOnOff></SoundOnOff>
-        <Quotes></Quotes>
+        <QuotesDisplay></QuotesDisplay>
         <WellBeingButton/>
       </section>
     </div>
