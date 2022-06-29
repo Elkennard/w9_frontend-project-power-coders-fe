@@ -1,22 +1,94 @@
-# National Bootcamp - Week Nine Project Brief
 
-For your project, you’ll be using what you’ve learned on the course so far to try and improve the lives of your users. In this case, the users will be close to home: bootcampers!
+![Logo](https://raw.githubusercontent.com/SchoolOfCode/w9_backend-project-power-coders-fe/main/public/images/logo.PNG)
 
-To do this, you’ll need to take the time to understand your user (a bootcamper), their experiences, and their problems. Specifically, it might be good to focus on how to enhance the remote experience of a bootcamper, or what can help them with the vast amount of learning there is to do as a new developer. What do they need? What problem might they have that your application could solve for them? How can you get into the mindset of your user and keep them at the centre of your problem-solving?
+# SOC WELLBEING TOOLKIT - FRONT-END
 
-The high level outcomes from this project should be:
+The SoC Wellbeing Toolkit helps bootcampers manage their wellbeing using tools and resources in one handy location.
 
-- A minimum viable product (MVP) showcasing an innovative full stack application which meets the user need you’ve identified
-- A presentation, complete with how you worked as a team and a demonstration of the project
+This is the front-end documentation for the app.
 
-Your project application might include the following:
+The front-end provides a wellbeing toolkit for a Schoolof Code bootcamper to assist with remote learning.
 
-- Include a user experience created in React
-- Build a REST API which is used by your front-end
-- Be supported by a Postgresql database with multiple tables
-- Be built and managed in an agile way
-- Utilise testing for ensuring robust code
+Looking for the [Back-end?](https://github.com/SchoolOfCode/w9_backend-project-power-coders-fe)
 
-Remember, you only have a few days to code a solution, so being agile is key. That means brainstorming what you want to build, and working in sprints to deliver value each time. After each sprint, you can reassess and either continue on course or iterate towards a better solution. Have a plan which is incremental steps, rather than all or nothing.
 
-Click the link to see the [Project Guidelines](https://github.com/SchoolOfCode/project-guidelines/blob/master/project-week.md)
+## Features
+- Slides of wellbeing resources for each Thursday mindset session.
+- 5-minute break timer (currently auto starts on refresh).
+- Calming waves sound (toggle on/off).
+- Random inspirational quote.
+- Wellbeing check-in form, which feeds back to your enablement coach.
+
+
+## Installation
+
+```bash
+  git clone https://github.com/SchoolOfCode/w9_frontend-project-power-coders-fe.git
+  
+  cd w9_backend-project-power-coders-fe/power-coders-app
+  
+  npm i
+```
+
+
+## Documentation
+This is not yet deployed, so only works on localhost:3000 (front-end).
+
+To run the front end:
+
+```bash
+  npm start
+```
+
+
+## Roadmap
+### Next Steps
+- Fix carousel CSS glitches - ½ day
+- Make app responsive/mobile first  - 2 days
+- Turn break timer into a button - 1 hour
+
+### Stretch Goals
+- Login feature - requires ‘users’ table in DB and SQL joins
+- Multiple page application - ability to search for resources by category and week and display on different pages
+- User ratings of resources
+
+
+## Known Issues
+When the image and text size increases on the slides the page jumps up and down. This is due to the styling of the carousel. We would fix this by removing the imported bootstrap carousel and designing and implementing our own carousel.
+
+
+## Running Tests
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+## Tech Stack
+
+**Client:** React, JS, HTML, CSS, Bootstrap, Cypress
+
+
+## Appendix
+
+Features currently not implemented, but hard coded.
+- Profile picture
+- Personalised welcome message
+- Buger menu links
+
+
+## Authors
+
+- [@Abdullatif Farah](https://github.com/Afrosweetness2002)
+- [@Craig Summers](https://github.com/AlphaPentagon)
+- [@Dave Hazeldean](https://github.com/dvhzldn)
+- [@Emma Kennard](https://github.com/Elkennard)
+- [@Rajesh Reel](https://github.com/Rajesh-Reel)
+
+
+## Acknowledgements
+
+ - [Joseph Trodden](https://www.linkedin.com/in/josephtrodden/?originalSubdomain=uk)
+ 
+ Documentation created using [readme.so](https://readme.so/)
+
