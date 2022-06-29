@@ -58,10 +58,19 @@ When the image and text size increases on the slides the page jumps up and down.
 
 
 ## Running Tests
-To run tests, run the following command
+
+End-to-end test suites have been implemented using Cypress.
+
+To run tests in the Cypress app, run the following command and then click on the individual specs.
 
 ```bash
-  npm run test
+  npx cypress open
+```
+
+To run test in the comman line, run the following command
+
+```bash
+  npm run cy:run
 ```
 
 ## Tech Stack
