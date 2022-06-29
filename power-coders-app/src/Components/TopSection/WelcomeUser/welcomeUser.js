@@ -1,6 +1,6 @@
 import "./WelcomeUser.css";
 
-function WelcomeUser(user) {
+function WelcomeUser() {
   return <h3 id="welcomeMessage">Welcome!</h3>;
 }
 

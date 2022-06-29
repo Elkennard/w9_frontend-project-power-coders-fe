@@ -48,7 +48,7 @@ To run the front end:
 - Turn break timer into a button - 1 hour
 
 ### Stretch Goals
-- Login feature - requires ‘users’ table in DB and SQL joins
+- Login feature 
 - Multiple page application - ability to search for resources by category and week and display on different pages
 - User ratings of resources
 
