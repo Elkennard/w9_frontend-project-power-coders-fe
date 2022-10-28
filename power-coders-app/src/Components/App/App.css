@@ -15,11 +15,8 @@ html {
 
 * {
   box-sizing: border-box;
-}
-
-#page-wrap {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -41,14 +38,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--main-colour);
+  background-color: #f2f2f2;
 }
 
 header {
   padding: 4% 0;
   top: 0%;
   background-color: #f2f2f2;
-  min-height: 5vh;
+  height: 4vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -58,12 +55,6 @@ header {
   color: white;
 }
 
-.top-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .lower-section {
   background-color: #f2f2f2;
   display: flex;
@@ -71,7 +62,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2%;
-  width: 100%;
+  width: 100vw;
+  height: 10vh;
 }
-
-
