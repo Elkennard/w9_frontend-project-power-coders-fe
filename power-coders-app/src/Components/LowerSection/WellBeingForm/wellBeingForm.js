@@ -17,7 +17,7 @@ function WellbeingForm({ handleclick, isclicked }) {
   }
 
   async function postFeedback(formObject) {
-    await fetch("https://soc-wellbeing-toolkit.herokuapp.com", {
+    await fetch("https://w9-backend.herokuapp.com/feedback", {
       method: "POST",
       headers: {
         Accept: "application/json",
