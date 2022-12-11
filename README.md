@@ -9,7 +9,9 @@ This is the front-end documentation for the app.
 
 The front-end provides a wellbeing toolkit for a Schoolof Code bootcamper to assist with remote learning.
 
-Looking for the [Back-end?](https://github.com/SchoolOfCode/w9_backend-project-power-coders-fe)
+Looking for the [Back-end?](https://github.com/Elkennard/w9_backend-project-power-coders-fe)
+
+[Live Site](https://wellbeing-toolkit.netlify.app/)
 
 
 ## Features
@@ -23,7 +25,7 @@ Looking for the [Back-end?](https://github.com/SchoolOfCode/w9_backend-project-p
 ## Installation
 
 ```bash
-  git clone https://github.com/SchoolOfCode/w9_frontend-project-power-coders-fe.git
+  git clone https://github.com/Elkennard/w9_frontend-project-power-coders-fe.git
   
   cd w9_backend-project-power-coders-fe/power-coders-app
   
@@ -32,14 +34,12 @@ Looking for the [Back-end?](https://github.com/SchoolOfCode/w9_backend-project-p
 
 
 ## Documentation
-This is not yet deployed, so only works on localhost:3000 (front-end).
-
 To run the front end:
 
 ```bash
   npm start
 ```
-
+runs on localhost:3000
 
 ## Roadmap
 ### Next Steps
@@ -75,7 +75,7 @@ To run test in the comman line, run the following command
 
 ## Tech Stack
 
-**Client:** React, JS, HTML, CSS, Bootstrap, Cypress
+**Client:** React, JS, HTML, CSS, Bootstrap, Cypress, Netlify
 
 
 ## Appendix
